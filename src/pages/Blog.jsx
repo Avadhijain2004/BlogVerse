@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import CategoryCard from '../components/CategoryCard'
 import img from './../assets/Client-First - IMAGES/two-women-in-front-of-dry-erase-board-1181533-1.svg'
 import img03 from './../assets/Client-First - IMAGES/photo-of-woman-looking-at-man-3183173.svg'
@@ -70,7 +71,9 @@ function Blog() {
                             <div key={index} className="mb-20 flex items-start">
                                 <img className="w-2/5 h-66 object-cover mr-6" src={post.image} alt={post.title} />
                                 <div>
+                                    <Link to='/category'>
                                     <p className="text-base font-bold text-secondary mb-4 mt-4 uppercase tracking-widest">{post.category}</p>
+                                    </Link>
                                     <h2 className="text-[40px] font-bold text-primary mb-6 leading-tight">{post.title}</h2>
                                     <p className="text-base text-gray-600">{post.description}</p>
                                 </div>
