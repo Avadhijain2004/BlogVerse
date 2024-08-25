@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink,Link } from 'react-router-dom';
 import AuthorCard from '../components/AuthorCard'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import img01 from './../assets/Client-First - IMAGES/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses-7562313 (2).svg'
@@ -7,6 +8,7 @@ import img03 from './../assets/Client-First - IMAGES/content-unshaven-man-coveri
 import img02 from './../assets/Client-First - IMAGES/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083 (2).svg'
 import hand from './../assets/Client-First - IMAGES/ground-group-growth-hands-461049.svg'
 import blog from './../assets/Client-First - IMAGES/three-persons-sitting-on-the-stairs-talking-with-each-other-1438072.svg'
+import friends from './../assets/Client-First - IMAGES/close-up-photography-of-man-wearing-sunglasses-1212984.svg'
 
 const authors = [
     {
@@ -38,29 +40,60 @@ const authors = [
 function AboutUs() {
     return (
         <>
-            <div className="bg-offWhite py-10 mr-16 ml-16">
-                <div className="container mx-auto flex space-x-10">
-                    {/* About Us Section */}
-                    <div className="relative p-10 pr-6 pl-24 w-1/2">
-
-                        <h3 className="text-lg font-bold text-primary mb-4 tracking-widest">ABOUT US</h3>
-                        <h2 className="text-4xl font-bold text-gray-900 mb-6 leading-tight heading">
-                            We are a community of content writers who share their learnings
+            <div className="mr-16 ml-16 mx-auto my-16 pt-16">
+                <div className="flex flex-col lg:flex-row items-center bg-white shadow-lg overflow-hidden">
+                    <div className="lg:w-1/2 p-6">
+                        <p className="text-base font-semibold tracking-widest text-primary uppercase mb-4">About Us</p>
+                        <h2 className="text-5xl font-bold text-primary heading mb-4 leading-tight">
+                            We are a team of content writers who share their learnings
                         </h2>
-                        <p className="text-lightGrey mb-6 leading-7">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <p className="text-lightGrey mb-6 text-base pr-16 leading-7">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eligendi.
                         </p>
-                        <a href="#" className="text-secondary font-bold text-lg">
-                            Read More &gt;
-                        </a>
                     </div>
-
+                    <div className="lg:w-1/2 relative">
+                        <img
+                            src={friends}
+                            alt="Group of people"
+                            className="w-full h-full object-cover"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 bg-accent p-4 flex justify-around items-center">
+                            <div className="text-center">
+                                <p className="text-4xl font-bold text-primary">12+</p>
+                                <p className="text-sm text-primary font-semibold">Blogs Published</p>
+                            </div>
+                            <div className="text-center">
+                                <p className="text-4xl font-bold text-primary">18K+</p>
+                                <p className="text-sm text-primary font-semibold">Views on Finsweet</p>
+                            </div>
+                            <div className="text-center">
+                                <p className="text-4xl font-bold text-primary">30K+</p>
+                                <p className="text-sm text-primary font-semibold">Total active Users</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="bg-offWhite py-10 mr-16 ml-16 p-16">
+                <div className="container mx-auto flex space-x-10">
                     {/* Our Mission Section */}
-                    <div className="relative w-1/2 p-10 pl-6 pr-28">
+                    <div className="relative w-1/2 p-10 pl-16 ">
 
                         <h3 className="text-base font-semibold text-primary mb-4 tracking-widest">OUR MISSION</h3>
                         <h2 className="text-3xl font-semibold font-body text-primary heading mb-6 leading-tight">
                             Creating valuable content for creatives all around the world
+                        </h2>
+                        <p className="text-lightGrey mb-8 leading-7">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    {/* Our Vision Section */}
+                    <div className="relative w-1/2 p-10 pl-6 pr-16">
+
+                        <h3 className="text-base font-semibold text-primary mb-4 tracking-widest">OUR MISSION</h3>
+                        <h2 className="text-3xl font-semibold font-body text-primary heading mb-6 leading-tight">
+                            A Platform that empowers individuals to improve
                         </h2>
                         <p className="text-lightGrey mb-8 leading-7">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -111,6 +144,7 @@ function AboutUs() {
             <div className='text-center'>
                 <div className="flex justify-center space-x-8">
                     {authors.map((author, index) => (
+                        <Link to='/author'>
                         <div
                             key={index}
                             className={`w-64 h-72 p-6 border bg-offWhite hover:bg-cream shadow-md transition-colors duration-300`}
@@ -133,6 +167,7 @@ function AboutUs() {
                                 </a>
                             </div>
                         </div>
+                        </Link>
                     ))}
                 </div>
             </div>

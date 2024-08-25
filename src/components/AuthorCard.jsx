@@ -39,6 +39,7 @@ const AuthorCard = () => {
       <h2 className="text-4xl font-bold mb-10 heading text-primary font-heading">List of Authors</h2>
       <div className="flex justify-center space-x-8">
         {authors.map((author, index) => (
+          <Link to='/author'>
           <div
             key={index}
             className={`w-64 h-72 p-6 border bg-offWhite hover:bg-cream shadow-md transition-colors duration-300`}
@@ -61,6 +62,7 @@ const AuthorCard = () => {
             </a>
           </div>
           </div>
+          </Link>
         ))}
       </div>
     </div>
