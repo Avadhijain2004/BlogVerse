@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img from './../assets/Client-First - IMAGES/two-women-in-front-of-dry-erase-board-1181533-1.svg'
 import logo01 from "./../assets/icon2.png"
 import logo03 from './../assets/Client-First - icons/icon.svg'
@@ -48,11 +49,13 @@ const Category = () => {
             {posts.map((post, index) => (
               <div key={index} className="mb-10 flex items-start">
                 <img className="w-1/3 h-60 object-cover mr-6" src={post.image} alt={post.title} />
+                <Link to='/blog-post'>
                 <div>
                   <p className="text-sm font-semibold text-secondary mb-4 mt-4 uppercase tracking-widest">{post.category}</p>
                   <h2 className="text-4xl font-bold text-primary mb-4">{post.title}</h2>
                   <p className="text-base text-gray-600">{post.description}</p>
                 </div>
+                </Link>
               </div>
             ))}
           </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import backgroundImage from './../assets/Client-First - IMAGES/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.svg';
+import { Link } from 'react-router-dom';
 
 function HeroContent() {
     return (
@@ -23,7 +24,9 @@ function HeroContent() {
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br /> fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident.
         </p>
+        <Link to='/blog'>
         <button className='mt-12 border bg-accent text-primary p-3 font-bold w-48 pl-8 pr-8 text-lg'>Read More {'>'}</button>
+        </Link>
         </div>
       
       </div>

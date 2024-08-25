@@ -7,6 +7,7 @@ import img04 from './../assets/Client-First - IMAGES/photo-of-people-walking-on-
 import img02 from './../assets/Client-First - IMAGES/photo-of-people-doing-handshakes-3183197.svg'
 import image from './../assets/Client-First - IMAGES/man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.svg'
 
+
 function Blog() {
 
     const posts = [
@@ -44,6 +45,7 @@ function Blog() {
 
     return (
         <>
+            
             <div className="flex bg-gray-100 p-6 pt-24 pb-24">
                 <div className="flex-1 mr-16 ml-16">
                     <p className="text-primary tracking-widest uppercase text-base mb-2 font-bold">Featured Post</p>

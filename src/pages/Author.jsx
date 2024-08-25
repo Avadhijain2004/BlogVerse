@@ -38,7 +38,7 @@ function Author() {
                             <div key={index} className="mb-20 flex items-start">
                                 <img className="w-2/5 h-66 object-cover mr-6" src={post.image} alt={post.title} />
                                 <div>
-                                    <Link to='/category'>
+                                    <Link to='/blog-post'>
                                         <p className="text-base font-bold text-secondary mb-4 mt-4 uppercase tracking-widest">{post.category}</p>
                                     </Link>
                                     <h2 className="text-[40px] font-bold text-primary mb-6 leading-tight">{post.title}</h2>
