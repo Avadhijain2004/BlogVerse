@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink , Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import logo from './../../assets/Client-First - IMAGES/Logo.svg'
 
@@ -58,9 +58,11 @@ function Footer() {
                 placeholder="Enter Your Email"
                 className="p-3 text-black bg-[#282b3f] border-gray-600 border w-[360px]"
               />
+              <Link to='/subscribe'>
               <button className="bg-accent text-black py-3 px-6 font-semibold w-40">
                 Subscribe
               </button>
+              </Link>
             </div>
           </div>
 

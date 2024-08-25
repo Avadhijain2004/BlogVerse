@@ -76,7 +76,9 @@ function Header() {
                 </li>
               ))}
             </ul>
+            <Link to='/subscribe'>
             <button className='mr-16 text-black bg-offWhite p-10 pt-4 pb-4 font-bold'>Subscribe</button>
+            </Link>
           </div>
           {/*===========nav right================*/}
         

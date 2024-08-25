@@ -39,11 +39,11 @@ const CategoryCard = () => {
         {categories.map((category, index) => (
           <div
             key={index}
-            className={`w-76 h-56 p-10 border ${category.bgColor} shadow-md transition-colors duration-300`}
+            className={`w-76 h-60 p-10 border ${category.bgColor} shadow-md transition-colors duration-300`}
           >
             <img className='border border-offWhite bg-cream rounded' src={category.icon} alt="" />
             <h3 className="text-2xl font-bold mb-2 heading mt-4">{category.title}</h3>
-            <p className="text-lightGrey text-sm">{category.description}</p>
+            <p className="text-lightGrey text-base">{category.description}</p>
           </div>
         ))}
       </div>
