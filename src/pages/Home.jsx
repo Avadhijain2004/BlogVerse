@@ -14,7 +14,7 @@ function Home() {
       <HeroContent />
       <FeaturedPost />
       <AboutSection />
-      <CategoryCard />
+      <CategoryCard title="Choose A Category"/>
       <StorySection />
       <AuthorCard />
       <HomePage />

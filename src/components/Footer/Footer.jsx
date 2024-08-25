@@ -56,7 +56,7 @@ function Footer() {
               <input
                 type="email"
                 placeholder="Enter Your Email"
-                className="p-3 text-black bg-[#282b3f] border-gray-600 border w-[360px]"
+                className="p-3 text-offWhite bg-[#282b3f] border-gray-600 border w-[360px]"
               />
               <Link to='/subscribe'>
               <button className="bg-accent text-black py-3 px-6 font-semibold w-40">

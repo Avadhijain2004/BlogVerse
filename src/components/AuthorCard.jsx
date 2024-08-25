@@ -36,12 +36,12 @@ const authors = [
 const AuthorCard = () => {
   return (
     <div className="text-center py-24 mr-16 ml-16">
-      <h2 className="text-4xl font-bold mb-6 heading text-primary font-heading">List of Authors</h2>
+      <h2 className="text-4xl font-bold mb-10 heading text-primary font-heading">List of Authors</h2>
       <div className="flex justify-center space-x-8">
         {authors.map((author, index) => (
           <div
             key={index}
-            className={`w-64 h-72 p-6 border ${author.bgColor} shadow-md transition-colors duration-300`}
+            className={`w-64 h-72 p-6 border bg-offWhite hover:bg-cream shadow-md transition-colors duration-300`}
           >
             <img className="w-24 h-24 mx-auto rounded-full" src={author.image} alt={author.name} />
             <h3 className="text-2xl font-bold mb-2 mt-4">{author.name}</h3>

@@ -47,7 +47,7 @@ function FeaturedPost() {
             </div>
           </div>
           <Posts />
-          <Posts bgColor="bg-cream" />
+          <Posts />
           <Posts />
           <Posts />
         </div>
