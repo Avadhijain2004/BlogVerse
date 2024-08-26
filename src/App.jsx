@@ -10,7 +10,7 @@ import Author from './pages/Author'
 import BlogPost from './pages/BlogPost'
 import Category from './pages/Category'
 import PrivacyPolicy from './pages/PrivacyPolicy'
-import Subscribe from './pages/Subscribe'
+
 
 
 
@@ -57,10 +57,7 @@ function App() {
           path: "/privacy-policy",
           element: <PrivacyPolicy />,
         },
-        {
-          path: "/subscribe",
-          element: <Subscribe />,
-        },
+        
 
       ],
     },
