@@ -55,7 +55,9 @@ function Blog() {
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br className='hidden md:block' /> fugiat nulla pariatur.
                         Excepteur sint occaecat cupidatat non proident.
                     </p>
+                    <Link to='/blog-post'>
                     <button className='mt-8 border bg-accent text-primary p-3 font-bold w-48 pl-8 pr-8 text-lg'>Read More {'>'}</button>
+                    </Link>
                 </div>
                 <div className="md:mr-16 flex justify-center">
                     <img
@@ -74,7 +76,7 @@ function Blog() {
                             <div key={index} className="mb-10 md:mb-20 flex flex-col md:flex-row items-start">
                                 <img className="w-full md:w-2/5 h-56 md:h-66 object-cover mb-6 md:mb-0 md:mr-6" src={post.image} alt={post.title} />
                                 <div>
-                                    <Link to='/category'>
+                                    <Link to='/blog-post'>
                                         <p className="text-base font-bold text-secondary mb-2 md:mb-4 uppercase tracking-widest">{post.category}</p>
                                     </Link>
                                     <h2 className="text-2xl md:text-[40px] font-bold text-primary mb-4 md:mb-6 leading-tight">{post.title}</h2>

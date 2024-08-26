@@ -15,7 +15,7 @@ function HeroContent() {
       className="flex items-center"
     >
       <div className='text-offWhite p-6 md:ml-16'>
-        <p className='mt-12 md:mt-6 font-body tracking-widest text-sm md:text-lg'>
+        <p className='mt-12 md:mt-0 font-body tracking-widest text-sm md:text-lg'>
           POSTED ON <span className='font-bold font-heading'>STARTUP</span>
         </p>
         <h2 className='text-[32px] md:text-[56px] mt-4 md:mt-8 font-semibold tracking-wide leading-tight text-light'>
@@ -29,7 +29,7 @@ function HeroContent() {
           Excepteur sint occaecat cupidatat non proident.
         </p>
         <Link to='/blog'>
-          <button className='mt-8 md:mt-12 border bg-accent text-primary p-3 font-bold w-full md:w-48 text-base md:text-lg'>
+          <button className='mt-8 md:mt-12 bg-accent text-primary p-3 font-bold w-full md:w-48 text-base md:text-lg'>
             Read More {'>'}
           </button>
         </Link>

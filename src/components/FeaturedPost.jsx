@@ -1,6 +1,7 @@
 import React from 'react';
 import whiteBuilding from './../assets/Client-First - IMAGES/white-concrete-building-1838640.svg';
 import Posts from './Posts';
+import { Link } from 'react-router-dom';
 
 function FeaturedPost() {
   return (
@@ -12,7 +13,7 @@ function FeaturedPost() {
           <h2 className='heading text-2xl md:text-4xl text-primary'>Featured Post</h2>
           <div className='p-4 md:p-8 mt-4 md:mt-8 bg-white shadow-lg overflow-hidden'>
             <img
-              src={whiteBuilding} // Replace with your image source
+              src={whiteBuilding} 
               alt="Featured Post"
               className="w-full h-48 md:h-80 object-cover"
             />
@@ -26,9 +27,11 @@ function FeaturedPost() {
               <p className="text-gray-600 mb-2 md:mb-4 text-sm md:text-base">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
               </p>
+              <Link to='/blog-post'>
               <button className='mt-4 border bg-accent text-primary p-2 md:p-3 font-bold w-full md:w-48 text-base'>
                 Read More {'>'}
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -38,9 +41,9 @@ function FeaturedPost() {
           <div className='flex  md:flex-row justify-between mb-4'>
             <h2 className="heading font-bold text-xl md:text-3xl mb-2">All Posts</h2>
             <div className="text-right  md:mt-4">
-              <a href="#" className="text-secondary font-medium hover:underline">
+              <Link to='/blog' className="text-secondary font-medium hover:underline">
                 View All
-              </a>
+              </Link>
             </div>
           </div>
           <Posts />

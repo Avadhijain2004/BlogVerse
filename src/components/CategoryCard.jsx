@@ -3,6 +3,7 @@ import icon03 from './../assets/Client-First - icons/icon.svg';
 import icon02 from './../assets/icon2.png';
 import icon01 from './../assets/Client-First - icons/Icon-1.svg';
 import icon04 from './../assets/Client-First - icons/business-and-trade 1.svg';
+import { NavLink, Link } from 'react-router-dom';
 
 const categories = [
   {
@@ -33,6 +34,7 @@ const CategoryCard = ({ title }) => {
       <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-10 heading text-primary font-heading">
         {title}
       </h2>
+      <Link to='/category'>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {categories.map((category, index) => (
           <div
@@ -53,6 +55,7 @@ const CategoryCard = ({ title }) => {
           </div>
         ))}
       </div>
+      </Link>
     </div>
   );
 };

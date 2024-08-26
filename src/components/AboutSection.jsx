@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function AboutSection() {
   return (
@@ -23,9 +24,9 @@ function AboutSection() {
             <p className="text-sm md:text-base text-lightGrey mb-6 leading-7">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <a href="#" className="text-secondary font-bold text-base md:text-lg">
+            <Link to='/about-us' className="text-secondary font-bold text-base md:text-lg">
               Read More &gt;
-            </a>
+            </Link>
           </div>
 
           {/* Our Mission Section */}
