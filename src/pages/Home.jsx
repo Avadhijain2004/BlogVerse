@@ -7,6 +7,7 @@ import CategoryCard from '../components/CategoryCard';
 import StorySection from '../components/StorySection';
 import AuthorCard from '../components/AuthorCard';
 import HomePage from '../components/HomePage';
+import FeaturedIn from '../components/FeaturedIn';
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <CategoryCard title="Choose A Category"/>
       <StorySection />
       <AuthorCard />
+      <FeaturedIn />
       <HomePage />
     </section>
   );

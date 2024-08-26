@@ -51,10 +51,10 @@ function Header() {
 
   return (
     <div className='h-20 bg-primary font-heading bg-no-repeat bg-center bg-cover w-full' ref={headerRef}>
-      <div className="flex items-center justify-between px-4 md:px-8">
+      <div className="flex items-center justify-between px-4 md:px-8 md:pt-0 pt-4">
         {/*==========Logo========= */}
         <div>
-          <img className='m-4 md:m-6 md:ml-10' src={logo} alt="Logo" />
+          <img className='m-2 md:m-6 md:ml-10' src={logo} alt="Logo" />
         </div>
 
         {/*==========Menu Button for Mobile========= */}
