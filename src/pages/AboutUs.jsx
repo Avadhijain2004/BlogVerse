@@ -136,7 +136,7 @@ function AboutUs() {
                         <p className='mt-6 text-lg lg:text-2xl font-bold font-body tracking-wide text-left text-primary leading-9'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio placeat voluptatem, ducimus dolorum modi.
                         </p>
-                        <p className='mt-6 font-body text-base tracking-wider leading-7 font-thin text-lightGrey pr-0 lg:pr-16'>
+                        <p className='mt-6 font-body text-base tracking-wider leading-7 font-thin text-gray-700 pr-0 lg:pr-16'>
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum possimus dolor cumque voluptas, itaque quisquam excepturi ad aspernatur veniam aliquam!
                         </p>
                     </div>
