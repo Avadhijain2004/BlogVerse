@@ -2,49 +2,49 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/"
     }
   ],
   "routes": [
     {
       "src": "/",
-      "dest": "/index.html"
+      "dest": "/"
     },
     {
       "src": "/home",
-      "dest": "/index.html"
+      "dest": "/"
     },
     {
       "src": "/blog",
-      "dest": "/index.html"
+      "dest": "/"
     },
     {
       "src": "/about-us",
-      "dest": "/index.html"
+      "dest": "/"
     },
     {
       "src": "/author",
-      "dest": "/index.html"
+      "dest": "/"
     },
     {
       "src": "/contact",
-      "dest": "/index.html"
+      "dest": "/"
     },
     {
       "src": "/blog-post",
-      "dest": "/index.html"
+      "dest": "/"
     },
     {
       "src": "/category",
-      "dest": "/index.html"
+      "dest": "/"
     },
     {
       "src": "/privacy-policy",
-      "dest": "/index.html"
+      "dest": "/"
     },
     {
       "src": "/subscribe",
-      "dest": "/index.html"
+      "dest": "/"
     }
   ]
 }
