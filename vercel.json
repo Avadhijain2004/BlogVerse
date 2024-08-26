@@ -4,47 +4,5 @@
       "source": "/(.*)",
       "destination": "/"
     }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/"
-    },
-    {
-      "src": "/home",
-      "dest": "/"
-    },
-    {
-      "src": "/blog",
-      "dest": "/"
-    },
-    {
-      "src": "/about-us",
-      "dest": "/"
-    },
-    {
-      "src": "/author",
-      "dest": "/"
-    },
-    {
-      "src": "/contact",
-      "dest": "/"
-    },
-    {
-      "src": "/blog-post",
-      "dest": "/"
-    },
-    {
-      "src": "/category",
-      "dest": "/"
-    },
-    {
-      "src": "/privacy-policy",
-      "dest": "/"
-    },
-    {
-      "src": "/subscribe",
-      "dest": "/"
-    }
   ]
 }
