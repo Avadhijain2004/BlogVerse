@@ -1,0 +1,50 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/home",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/blog",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/about-us",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/author",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/blog-post",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/category",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/privacy-policy",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/subscribe",
+      "dest": "/index.html"
+    }
+  ]
+}

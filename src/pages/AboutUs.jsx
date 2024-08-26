@@ -129,7 +129,7 @@ function AboutUs() {
                     />
                 </div>
                 <div className="flex-1 lg:order-1">
-                    <div className='p-6 lg:mr-16 '>
+                    <div className='p-6 lg:mr-16 lg:ml-10 '>
                         <h2 className='text-3xl lg:text-[42px] font-semibold leading-tight text-primary heading tracking-tight md:mt-16'>
                             Why we shared this Blog
                         </h2>
